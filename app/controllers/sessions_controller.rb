@@ -1,13 +1,5 @@
 class SessionsController < ApplicationController
 
-  def hello
-    if session[:name].nil || session[:name] == ""
-      redirect_to login_path
-    else
-      render :index
-    end
-  end
-
   def new
   end
 
